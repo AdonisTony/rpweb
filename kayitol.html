@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus | Giriş Yap</title>
+    <link rel="stylesheet" href="/style4.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1><a href="/anasayfa.html">NEXUS</a></h1>
+        <P>Medieval Fantastic Roleplay Deneyimi</P>
+    </div>
+    <div class="nav">
+        <a href="/anasayfa.html"><i class='bx bx-home-alt'></i> Ana Sayfa</a>
+        <a href="/rpbilgiler.html"><i class='bx bx-info-circle' ></i> RP Bilgiler</a>
+        <a href="/girisyap.html"><i class='bx bxs-user-account' ></i> Giriş Yap</a>
+        <a href="/kayitol.html"> <i class='bx bxs-user-plus' ></i> Kayıt Ol</a>
+    </div>
+
+    <div class="girisarka">
+        <form action="">
+            <div class="epostagirisi">
+             <label for="epostalabel">E-Posta Adresin</label><br>
+             <i class='bx bx-envelope bx-flashing'></i> <input type="email" name="epostalabel" id="epostalabel" required placeholder="  @" title="E-posta Adresiniz">
+            </div>
+            
+            <div class="sifregirisi">
+            <label for="girissifre">Şifren</label><br>
+            <i class='bx bx-lock-alt bx-flashing' ></i> <input type="password" id="girissifre" required placeholder="  **********" title="Şifreniz">
+            </div>
+
+            <div class="discordidkayit">
+                <label for="discordid">Discord ID</label><br>
+                <i class='bx bx-qr bx-flashing' ></i> <input type="number" id="discordid" required title="Discord Hesabına Ait Olan Discord Hesap ID'si" placeholder="  0000000000000" min="1" max="25">
+            </div>
+<br>
+            <div class="karakteradkayit">
+                <label for="karakterad">Karakter Ad</label><br>
+                <i class='bx bx-rename bx-flashing' ></i> <input type="text" id="karakterad" name="karakteradname" id="karakteradid" required placeholder="  Ad" pattern="[A-Za-z]*" title="Sadece Harf girin" maxlength="14">
+            </div>
+<br>
+            <div class="karaktersoyadkayit">
+                <label for="karaktersoyad">Karakter Soyad</label><br>
+                <i class='bx bx-rename bx-flashing' ></i> <input type="text" name="karaktersoyad" id="karaktersoyad" required placeholder="  Soyad" pattern="[A-Za-z]*" title="Sadece Harf girin" maxlength="14">
+            </div>
+<br>
+            <div class="karakteryaskayit">
+                <label for="karakteryas">Karkter Yaş</label><br>
+                <i class='bx bx-user-circle bx-flashing' ></i> <input type="number" required placeholder="  **" id="karakteryas" min="10" max="999">
+            </div>
+<br>
+            <div class="karaktercinsiyetkayit">
+                <p>Cinsiyet</p><br>
+                <input type="radio" name="cinsiyet" id="erkek" required>
+                <label class="erkek" for="erkek">Erkek</label>
+                <label class="kadin" for="kadin">Kadın</label>
+                <input type="radio" name="cinsiyet" id="kadin" required>
+            </div>
+<br>
+            <div class="karaktergorunumkayit">
+                <label for="karaktergorunum">Karakter Görünüm</label><br>
+                <input class="file31" type="file" name="karaktergorunum" id="karaktergorunum" accept="image/*" required>
+            </div>
+            <br>
+            <div class="karakterirkkayit">
+                <label for="karakterirk">Karakter Irk</label><br>
+                <i class='bx bx-dna bx-flashing' ></i> <select name="karakterirk" id="karakterirk" required>
+                    <option value=""></option>
+                    <option value="insan">İnsan</option>
+                    <option value="iblis">İblis</option>
+                    <option value="dragonborn">Dragonborn</option>
+                </select>
+            </div>
+            <br>
+            <div class="karaktermeslekkayit">
+                <label for="karaktermeslek">Karakter Meslek</label><br>
+                <i class='bx bx-dollar-circle bx-flashing' ></i> <select name="karaktermeslek" id="karaktermeslek" required>
+                    <option value=""></option>
+                    <option value="issiz">İşsiz</option>
+                    <option value="insan">Barmen / Barmaid</option>
+                    <option value="iblis">Han Çalışanı</option>
+                    <option value="dragonborn">Demirci Ustası</option>
+                    <option value="balikci">Balıkçı</option>
+                    <option value="rahiprahibe">Rahip / Rahibe</option>
+                    <option value="tapinakci">Tapınakçı</option>
+                    <option value="">İmparatorluk Askeri</option>
+                    <option value="">Askeri Keşif Birliği</option>
+                </select>
+            </div>
+<br>
+            <div class="karakterlementkayit">
+                <label for="karakterelement">Karakter Element</label><br>
+                <i class='bx bx-diamond bx-flashing' ></i> <select name="karakterelement" id="karakterlement" required>
+                    <option value=""></option>
+                    <option value="">Yok</option>
+                    <option value="doga">Doğa</option>
+                    <option value="kaya">Kaya</option>
+                    <option value="hava">Hava</option>
+                    <option value="su">Su</option>
+                    <option value="buz">Buz</option>
+                    <option value="elektrik">Elektrik</option>
+                    <option value="ates">Ateş</option>
+                </select>
+            </div>
+<br>
+            <div class="karaktermühürkayit">
+                <label for="karaktermühür">Karakter Mühür</label><br>
+                <i class='bx bx-ghost bx-flashing' ></i> <select name="karaktermühür" id="karaktermühür" required>
+                    <option value=""></option>
+                    <option value="">Yok</option>
+                    <option value="ejderruhu">Ejder Ruhu</option>
+                    <option value="kitsune">Kitsune</option>
+                    <option value="zamanakimi">Zaman Akımı</option>
+                    <option value="tanrininlutfu">Tanrının Lütufu</option>
+                    <option value="karma">Karma</option>
+                    <option value="kemik">Kemik</option>
+                </select>
+            </div>
+<br>
+            <div class="karaktersinifkayit">
+                <label for="karaktersinif1">Karakter 1. Sınıfı</label><br>
+                <i class='bx bx-pyramid bx-flashing' ></i> <select name="karaktersinif1" id="karaktersinif1" required>
+                    <option value=""></option>
+                    <option value="dovuscu">Dövüşçü</option>
+                    <option value="savascilar">Savaşçılar</option>
+                    <option value="koruyucular">Koruyucular</option>
+                    <option value="tapinakci">Tapınakçı</option>
+                    <option value="sifacı">Şifacı</option>
+                </select>
+            </div>
+<br>
+            <div class="karaktersinifkayit2">
+                <label for="karaktersinif2">Karakter 2. Sınıfı</label><br>
+                <i class='bx bx-pyramid bx-flashing' ></i> <select name="karaktersinif2" id="karaktersinif1" required>
+                    <option value=""></option>
+                    <option value="dovuscu">Dövüşçü</option>
+                    <option value="savascilar">Savaşçılar</option>
+                    <option value="koruyucular">Koruyucular</option>
+                    <option value="tapinakci">Tapınakçı</option>
+                    <option value="sifacı">Şifacı</option>
+                </select>
+            </div>
+
+            <br><br>
+
+            <div class="gondergirisi">
+            <input type="submit" value="Kayıt Ol" title="Kayıt Ol">
+            </div>
+
+        </form>
+    </div>
+
+    <div class="social-media">
+        <a href="https://instagram.com/ekselans.t" target="_blank"><i class='bx bxl-instagram-alt'></i>İnstagram</a>
+        <a href="https://www.youtube.com/@tonymontana-0001" target="_blank"><i class='bx bxl-youtube'></i>YouTube</a>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; Nexus Roleplay Platformu. Tüm Hakları Saklıdır. 
+                <a class="dcadress" href="https://discord.com/users/443389897298935818" target="_blank">By Devoloper @Zakai</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
